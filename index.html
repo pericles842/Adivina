@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+    <link rel="stylesheet" href="style/style_basic.css">
+    <link rel="stylesheet" href="style/responsiv.css">
+</head>
+<body>
+    <div class="box">
+        <div id="auto" onclick="divAuto()">
+            <p class="hiden">barra </p>
+        </div>
+            <div id="div_mostrar" style="display: none">
+                <h1 class="guess_tex">Guess</h1>
+            </div>
+        <div class="box_two">
+            <div class="box_words">
+                <p class="words_one" align="center">Adivinanza</p>
+            </div>
+                <div class="words_adivine_help">
+                    <p>Blanca por dentro<br>
+                        verde por fuera <br>
+                        Si no sabes,<br>
+                        espera.</p>
+                </div>
+                <div class="boton">
+                    <input type="text"  placeholder="Addivina la palabra" id="input_one"> <br>
+                        <input type="submit" name="Enviar" id="boton_input">
+                </div>
+        </div>
+    </div>
+    <script src="models/main.js"></script>
+</body>
+</html>
