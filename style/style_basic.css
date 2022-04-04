@@ -3,8 +3,9 @@
     padding: 0px;
 }
 ::placeholder{
-    color: #91fff6;
-    opacity: .1;
+    color: #ffffff;
+    opacity: .5;
+    font-family: Kalinga;
 }
 .boton{
     text-align: center;
@@ -26,7 +27,7 @@
     background-color: #212733;
 }
 #div_mostrar_two{
-    background-color: #323636;
+    background-color: #0B0C10;
 	height: 0px;
 	transition: height .4s;
     color:#ffffff;
@@ -45,7 +46,7 @@
     border-radius: 50px;
 }
 .words_one{ 
-    font-size: 40px;
+    font-size: 30px;
     font-family: arial;
     padding: 7px;
     color: #212733;
@@ -69,7 +70,7 @@
     text-align: center;
 }
 #auto_tow{
-    background: #323636;
+    background: #0B0C10;
     cursor: pointer;
     text-align: center;
     margin-top: 20px;
@@ -91,14 +92,27 @@
 }
 input,textarea{
     outline: none;
+    background-color: #212733;
+    color: #FFFFFF;
+    border: 0;
+    font-family: Kalinga;
 }
 .input_general{
     font-size: 20px;
-    color:#323636;
+    color: #FFFFFF;
+    background-color: #212733;
+    border-radius: 20px;
+    padding: 5px;
+    border: 0;
+    margin: 5px;
+}
+.input_general_texarea{
+    color: #FFFFFF;
+    background-color: #212733;
 }
 #boton_input_two{
     border: 0;
-    color: #212733;
+    color: #FFFFFF;
     font-size: 20px;
     margin-top: 15px;
     border-bottom-left-radius: 30px ;
@@ -106,7 +120,7 @@ input,textarea{
     padding: 2px;
     padding-left:50px ;
     padding-right:50px ;
-    background-color: #91fff6;
+    background-color: #212733;
     font-family: arial;
 }
 .box_tres{

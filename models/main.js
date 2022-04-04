@@ -13,7 +13,7 @@ function divAuto(){
 }
 function divAuto_two(){ 
     if(clic_two==1){
-    document.getElementById("div_mostrar_two").style.height = "150px";
+    document.getElementById("div_mostrar_two").style.height = "190px";
     document.getElementById("div_mostrar_two").style.display="block";
     clic_two = clic_two + 1;
     } else{
