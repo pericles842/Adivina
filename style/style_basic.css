@@ -39,6 +39,7 @@
     text-align: center;
     font-family: Kalinga;
     margin-top: 20px;
+    line-height:25px;
 }
 .box_words{
     margin-top: 20px;
@@ -83,7 +84,7 @@
     text-align: center;
     border-bottom-left-radius:90px ;
     border-bottom-right-radius: 90px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 .guess_tex{
     font-size: 70px;
@@ -92,7 +93,6 @@
 }
 input,textarea{
     outline: none;
-    background-color: #212733;
     color: #FFFFFF;
     border: 0;
     font-family: Kalinga;
@@ -118,12 +118,17 @@ input,textarea{
     border-bottom-left-radius: 30px ;
     border-bottom-right-radius: 30px;
     padding: 2px;
-    padding-left:50px ;
-    padding-right:50px ;
+    padding-left:90px ;
+    padding-right:90px ;
     background-color: #212733;
     font-family: arial;
 }
 .box_tres{
     
     color: #FFFFFF;
+    text-overflow: ellipsis;
+    word-spacing:50px;
+}
+.input_image{
+    padding: 0;
 }
