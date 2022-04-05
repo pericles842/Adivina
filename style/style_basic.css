@@ -127,7 +127,8 @@ input,textarea{
     
     color: #FFFFFF;
     text-overflow: ellipsis;
-    word-spacing:50px;
+    word-spacing:40px;
+    font-family: arial
 }
 .input_image{
     padding: 0;

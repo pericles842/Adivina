@@ -22,16 +22,78 @@ function divAuto_two(){
      clic_two = 1;
     }   
  }
-  let boton_input_two = document.getElementById('boton_input_two')
-
+let boton_input_two = document.getElementById('boton_input_two')
+  function close() {
+   location.reload();
+  }
   boton_input_two.addEventListener('click',record)
-
+  const words = [];
+  const pasward = document.getElementById('pasward_input').value
  function record() {
    let pasward = document.getElementById('pasward_input').value
    let tex = document.getElementById('tex_input').value
    let help = document.getElementById('help_input').value
+   let word = document.getElementById('word')
    let word_two = document.getElementById('word_two')
-    
-   word.innerHTML = help
-   word_two.innerHTML = tex
- }
+   if (tex.length == 0) {
+      swal({
+         title: "!Campo vacio¡",
+         text: "El perteneciente esta vacio, llenar",
+         icon: "warning",
+       });
+   }else if(pasward.length == 0){
+      swal({
+         title: "!Campo vacio¡",
+         text: "Palabra secreta esta vacia, llenar",
+         icon: "warning",
+       });
+   }else if(help.length==0){
+      swal({
+         title: "!Campo vacio¡",
+         text: "Texto de ayuda esta vacio,llenar",
+         icon: "warning",
+       });
+   }else{
+      word.innerHTML = help
+      word_two.innerHTML = tex
+      words.push(pasward)
+      document.getElementById("div_mostrar_two").style.height = "0px";
+      document.getElementById("div_mostrar_two").style.display="none";
+      return pasward
+   }
+} 
+let boton_input = document.getElementById('boton_input')
+boton_input.addEventListener('click',result)
+function result() {
+   let input_one = document.getElementById('input_one').value 
+   let pasward = document.getElementById('pasward_input').value
+   if (input_one.length=="") {
+      swal({
+         title: "!Campo vacio¡",
+         text: "Llene los campos inferiores",
+         icon: "warning",
+       });
+   } else {
+      if (input_one==pasward) {
+         swal({
+            title: "!Haz ganado¡",
+            text: "Gracias por jugar",
+            icon: "success",
+          });
+      } else {
+         swal({
+            title:  input_one + "!No es la palabra¡",
+            text: "Intentalo otra vez",
+            icon: "error",
+          });
+      }
+   }
+}
+
+function info(){
+   swal({
+      title: "!Como jugar¡",
+      text: "Jugador dos llenara los campos superirores , jugador uno intentara adivinar la palabra oculta ",
+      icon: "warning",
+    });
+}
