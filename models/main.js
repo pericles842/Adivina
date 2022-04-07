@@ -22,13 +22,11 @@ function divAuto_two(){
      clic_two = 1;
     }   
  }
-let boton_input_two = document.getElementById('boton_input_two')
-  function close() {
-   location.reload();
-  }
+  let boton_input_two = document.getElementById('boton_input_two')
   boton_input_two.addEventListener('click',record)
   const words = [];
   const pasward = document.getElementById('pasward_input').value
+
  function record() {
    let pasward = document.getElementById('pasward_input').value
    let tex = document.getElementById('tex_input').value
@@ -59,22 +57,31 @@ let boton_input_two = document.getElementById('boton_input_two')
       words.push(pasward)
       document.getElementById("div_mostrar_two").style.height = "0px";
       document.getElementById("div_mostrar_two").style.display="none";
+      document.getElementById("div_mostrar").style.height = "70px";
+      document.getElementById("div_mostrar").style.display="block";
       return pasward
    }
 } 
 let boton_input = document.getElementById('boton_input')
 boton_input.addEventListener('click',result)
+
 function result() {
    let input_one = document.getElementById('input_one').value 
    let pasward = document.getElementById('pasward_input').value
-   if (input_one.length=="") {
+   if (input_one.length == "" && pasward.length == "") {
       swal({
          title: "!Campo vacio¡",
          text: "Llene los campos inferiores",
          icon: "warning",
        });
-   } else {
-      if (input_one==pasward) {
+   }else if(input_one.length > 1 && pasward.length == "") {
+      swal({
+         title: "!Campo vacio¡",
+         text: "Llene los campos inferiores",
+         icon: "warning",
+       });
+    } else if (input_one.length > 1 && pasward.length > 1) {
+       if (input_one == pasward) {
          swal({
             title: "!Haz ganado¡",
             text: "Gracias por jugar",
@@ -93,7 +100,7 @@ function result() {
 function info(){
    swal({
       title: "!Como jugar¡",
-      text: "Jugador dos llenara los campos superirores , jugador uno intentara adivinar la palabra oculta ",
-      icon: "warning",
+      text: "Este juego es de 2 jugadores . Comienza el jugador 2 bajando el panel y llenado los datos de la adivinanza , texto de ayuda , perteneciente y palabra clave para luego el jugador uno adivinarla",
+      icon: "info",
     });
 }
