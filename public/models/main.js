@@ -1,4 +1,10 @@
-
+function info(){
+   swal({
+      title: "!Como jugar¡",
+      text: "Este juego es de 2 jugadores . Comienza el jugador 2 bajando el panel y llenado los datos de la adivinanza , texto de ayuda , perteneciente y palabra clave para luego el jugador uno adivinarla",
+      icon: "info",
+    });
+}
 var clic = 1;
 var clic_two = 1;
 function divAuto(){ 
@@ -27,7 +33,6 @@ function divAuto_two(){
   boton_input_two.addEventListener('click',record)
   const words = [];
   const pasward = document.getElementById('pasward_input').value
-
  function record() {
    let pasward = document.getElementById('pasward_input').value
    let tex = document.getElementById('tex_input').value
@@ -96,12 +101,4 @@ function result() {
           });
       }
    }
-}
-
-function info(){
-   swal({
-      title: "!Como jugar¡",
-      text: "Este juego es de 2 jugadores . Comienza el jugador 2 bajando el panel y llenado los datos de la adivinanza , texto de ayuda , perteneciente y palabra clave para luego el jugador uno adivinarla",
-      icon: "info",
-    });
 }
