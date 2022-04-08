@@ -1,3 +1,4 @@
+
 var clic = 1;
 var clic_two = 1;
 function divAuto(){ 
