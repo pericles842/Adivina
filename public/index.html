@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess</title>
-    <link rel="stylesheet" href="style/style_basic.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess</title>
+  <link rel="stylesheet" href="style/style_basic.css">
 </head>
+
 <body>
-    <div class="box">
-        <div id="auto" onclick="divAuto()">
-            <p class="hiden">barra </p>
-        </div>
-            <div id="div_mostrar" style="display: none">
-                <h1 class="guess_tex">Guess</h1>
-            </div>
-        <div class="box_two">
-            <div class="box_words">
-                <p class="words_one" id="word_two" align="center">Categoria</p>
-            </div>
-                <div class="words_adivine_help">
-                    <p id="word">...............<br>
-                        ................ <br>
-                        ..............<br>
-                       .........</p>
-                </div>
-                <div class="boton">
-                    <input type="text"  placeholder="Adivina la palabra" id="input_one"> <br>
-                        <input type="submit" name="Enviar" id="boton_input">
-                </div>
-                <div id="auto_tow" onclick="divAuto_two()">
-                    <input type="image" src="image/flecha.png" class="input_image" width="50px" height="30px" alt="Desliza">
-                </div>
-                <div id="div_mostrar_two" style="display: none">
-                    <textarea name="comentarios" placeholder="Texto de ayuda" id="help_input" class="input_general_texarea" rows="2" cols="40"></textarea> <br>
-                    <input type="text" placeholder="Pertenece a.." id="tex_input" class="input_general"><br>
-                    <input type="password" name="contraseña"  placeholder="Palabra clave" class="input_general" id="pasward_input"> <br>
-                    <input type="submit" id="boton_input_two" ><br>
-                </div>
-                <div class="box_tres">
-                    <p>V-2.0
-                    @sarmientolois
-                    Louis  <b onclick="info()">ComoJugar</b>  </p>
-                    
-                </div>
-        </div>
+  <div class="box">
+    <div id="auto" onclick="divAuto()">
+      <p class="hiden">barra </p>
     </div>
-    <script src="models/main.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <div id="div_mostrar" style="display: none">
+      <h1 class="guess_tex">Guess</h1>
+    </div>
+    <div class="box_two">
+      <div class="box_words">
+        <p class="words_one" id="word_two" align="center">Categoria</p>
+      </div>
+      <div class="words_adivine_help">
+        <p id="word">...............<br>
+          ................ <br>
+          ..............<br>
+          .........</p>
+      </div>
+      <div class="boton">
+        <input type="text" placeholder="Adivina la palabra" id="input_one"> <br>
+        <input type="submit" name="Enviar" id="boton_input">
+      </div>
+      <div id="auto_tow" onclick="divAuto_two()">
+        <input type="image" src="image/flecha.png" class="input_image" width="50px" height="30px" alt="Desliza">
+      </div>
+      <div id="div_mostrar_two" style="display: none">
+        <textarea name="comentarios" placeholder="Texto de ayuda" id="help_input" class="input_general_texarea" rows="2"
+          cols="40"></textarea> <br>
+        <input type="text" placeholder="Pertenece a.." id="tex_input" class="input_general"><br>
+        <input type="password" name="contraseña" placeholder="Palabra clave" class="input_general" id="pasward_input">
+        <br>
+        <input type="submit" id="boton_input_two"><br>
+      </div>
+      <div class="box_tres">
+        <p>V-2.0
+          @sarmientolois
+          Louis <b onclick="info()">ComoJugar</b> </p>
+
+      </div>
+    </div>
+  </div>
+  <script src="models/main.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
+
 </html>
